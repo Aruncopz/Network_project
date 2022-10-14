@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e416a56bb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+     <div id="outerbox">
+      <div id="innerbox">
+
+        <div id="navigationbar">
+        <div id="logo"> 
+          <img class="networklogo"  src="/assets/images/network.png">
+          <span class="networkfont">NETWORK</span>
+        </div>
+        <div><button routerLink="/adddetailsform"  id="addbutton">+Add</button></div>
+        <div>
+            <button  id="profilebutton" (click)="showElements=!showElements">Profile <img class="profilelogo" src="/assets/images/dropdown.png"> 
+            </button>
+        </div>
+        <div id="profilecontentbox" *ngIf="showElements">
+            <p class="profilename"> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Arunkumar <br><br><br><br><br><br><br><br>
+                &nbsp;   arunjothi2599@gmail.com
+            </p>
+            <button class="logoutbutton">Logout</button>
+        </div>
+       </div>
+       <div id="showbox">
+        <button routerLink="/mainpage"  id="backbutton"> <img  class="backlogo"  src="/assets/images/dpleft.png">Back</button>
+        <span id="detailbutton">Person Detail's</span>
+          <img id="leftswipe"  src="/assets/images/ddleft.png">
+         <img id="rightswipe"  src="/assets/images/ddright.png">
+         <div id="detailbox">
+         <div id="photobox"><img class="photo"  src="/assets/images/arun.png"></div>
+         <div id="detailshowbox"><p>{{receiver.name}} <br>Intresting People <br>Neyveli<br> 8220710738 <br> _arunvjcopzz_<br>
+            https://www.linkedin.com/in/arun2599/ <br>
+            I have always been interested in web development, and 
+            I have the necessary skills required for the role. 
+            I have a good understanding of HTML, CSS, JavaScript.</p></div>
+         </div>
+       </div>
+      </div>
+     </div>
+  </body>
+</html>
+
