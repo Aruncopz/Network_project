@@ -189,29 +189,40 @@ fieldset{
     margin-top: 15px;
     margin-left:30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .selector{
-    border: 1px solid #2F4550;
-    border-radius: 8px;
+    width: 65px;
+    height: 24px;
+    background: #7C6F6F;
+    border-radius: 4px;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+    text-align:center;
+    color: #FFFFFF;
 }
-.selectbutton{
-    width: 20px;
-    height: 19px;
-}
-.showbox1{
-    scroll-behavior: smooth;
+
+.scrollbox{
+    overflow: hidden;
     overflow-y: auto;
-    
+
     height: 85%;
     width: 100%;
-    margin-left: 100px;
+    margin-left: 130px;
     margin-right: 100px;
     margin-top: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
+}
+.scrollbox::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
 }
 .cardbox{
     margin-top: -40px;
@@ -220,7 +231,7 @@ fieldset{
 
 .card{
     height: 180px;
-    border: 4px solid #2F4550;
+    border: 2.5px solid #2F4550;
     width: 140px;
     margin-left: 15px;
     margin-top: 63px;
@@ -248,5 +259,5 @@ fieldset{
     font-weight: 600;
     font-size: 13px;
     color: #000000;
-    margin-left: 22px;
+    margin-left: 30px;
 }

@@ -8,13 +8,17 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { AddDetailsFormComponent } from './add-details-form/add-details-form.component';
 import { DetailsDisplayPageComponent } from './details-display-page/details-display-page.component';
 
+
 const routes: Routes = [
+  { path: 'App', component: AppComponent },
   {path:'welcomepage',component:WelcomePageComponent},
+  {path: '', redirectTo: '/welcomepage', pathMatch:'full'},
   {path:'loginpage',component:LoginPageComponent},
   {path:'signuppage',component:SignupPageComponent},
   {path:'mainpage',component:MainPageComponent},
   {path:'adddetailsform',component:AddDetailsFormComponent},
-  {path:'detailsdisplaypage',component:DetailsDisplayPageComponent}
+  {path:'detailsdisplaypage/:id',component:DetailsDisplayPageComponent}
+  
 ];
 
 @NgModule({
@@ -22,5 +26,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents =[AppComponent,LoginPageComponent]
+
 

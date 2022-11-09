@@ -259,3 +259,6 @@ form{
     text-align: center;
     color: #000000;
 }
+.example-chip-list {
+    width: 100%;
+  }

@@ -27,11 +27,14 @@
          <button id="tagbutton">Add Person Detail's </button>
          
          <div id="showbox1">
-          <form #personForm="ngForm" (submit)="getData(personForm.value)"> 
+          <form > 
+            <!-- #personForm="ngForm" (submit)="getData(personForm.value)" -->
           <div id="showbox2">
+            
             <input ngModel type="text" class="typebutton" name="Name" placeholder="Name">
-          <div>
-            <select  class="tagbutton"  name="Tags" >
+            
+            
+               <select  class="tagbutton"  name="Tags" >
                 <option value=" ">Tag's</option>
                 <option value="intresting people's">Intresting people's</option>
                 <option value="business people's">Business people's</option>
@@ -40,7 +43,56 @@
                 <option value="talented people's">Talented people's</option>
                 <option value="startup plan people's">Startup plan people's</option>
                 <option value="create your own tag ">Create your own tag +</option>
-            </select></div>
+            </select> 
+
+            
+
+
+            <!-- <mbsc-select
+    [data]="myData"
+    [selectMultiple]="true"
+    [touchUi]="false">
+</mbsc-select> -->
+<!-- <form [formGroup]="myForm">
+  <ng-multiselect-dropdown
+      name="city"
+      [placeholder]="'Select City'"
+      [data]="cities"
+      formControlName="city"
+      [disabled]="disabled"
+      [settings]="dropdownSettings"
+      (onSelect)="onItemSelect($event)">
+  </ng-multiselect-dropdown>
+</form> -->
+          
+<!-- <mat-form-field class="example-chip-list" appearance="fill">
+  <mat-label>Tag's</mat-label>
+  <mat-chip-list #chipList aria-label="Tag selection">
+    <mat-chip
+      *ngFor="let tag of tags"
+      (removed)="remove(tag)">
+      {{tag}}
+      <button matChipRemove>
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </mat-chip>
+    <input
+      placeholder="New Tag..."
+      #tagInput
+      [formControl]="tagCtrl"
+      [matAutocomplete]="auto"
+      [matChipInputFor]="chipList"
+      [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+      (matChipInputTokenEnd)="add($event)">
+  </mat-chip-list>
+  <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+    <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
+      {{tag}}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field> -->
+
+          
             <input ngModel type="text" class="typebutton" name="location" placeholder="Place">
             <input ngModel type="text" class="typebutton" name="Number" placeholder="Contact Number">
             <input ngModel type="text" class="typebutton" name="Instagram" placeholder="Instagram" >

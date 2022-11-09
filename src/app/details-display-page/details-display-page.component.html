@@ -24,20 +24,47 @@
             <button class="logoutbutton">Logout</button>
         </div>
        </div>
+       <!-- <mat-paginator> -->
        <div id="showbox">
         <button routerLink="/mainpage"  id="backbutton"> <img  class="backlogo"  src="/assets/images/dpleft.png">Back</button>
         <span id="detailbutton">Person Detail's</span>
-          <img id="leftswipe"  src="/assets/images/ddleft.png">
-         <img id="rightswipe"  src="/assets/images/ddright.png">
+         <img id="leftswipe" onclick="prev()" src="/assets/images/ddleft.png">
+         <img id="rightswipe" onclick="next()" src="/assets/images/ddright.png">
          <div id="detailbox">
-         <div id="photobox"><img class="photo"  src="/assets/images/arun.png"></div>
-         <div id="detailshowbox"><p>{{receiver.name}} <br>Intresting People <br>Neyveli<br> 8220710738 <br> _arunvjcopzz_<br>
+         <div id="photobox"><img class="photo"  src={{getid.image}}>
+          <!-- <img class="photo"  src="/assets/images/arun.png"> -->
+        </div>
+         <!-- <div id="detailshowbox"><p>{{receiver.name}} <br>Intresting People <br>Neyveli<br> 8220710738 <br> _arunvjcopzz_<br>
             https://www.linkedin.com/in/arun2599/ <br>
             I have always been interested in web development, and 
             I have the necessary skills required for the role. 
-            I have a good understanding of HTML, CSS, JavaScript.</p></div>
+            I have a good understanding of HTML, CSS, JavaScript.</p></div> -->
+            <div id="detailshowbox">
+              <span id="Namebox">
+                <span class="namedetail"> <p>{{getid.name}} </p></span>
+                <!-- <span class="tagdetail"><p>  &nbsp;&nbsp;&nbsp; Intresting people, Idea people, Business people
+                  Startup people, Sport people, Party people, Model people, Helping people,Sport people </p></span> -->
+                  <span class="tagdetail"> <p>{{getid.category}} </p></span>
+              </span>
+              <span id="Contentbox">
+                <span class="contactdetail"><img class="mediapicture"   src="/assets/images/location.png"><p>{{getid.place}}</p> 
+                  <span class="contactdetail1">  <img class="mediapicture"   src="/assets/images/phone.png"><p>{{getid.number}}</p></span>
+                  </span>
+                <span class="mediadetail"><img class="mediapicture"   src="/assets/images/instagram.png"><p>{{getid.instagram}}</p> 
+                <span class="mediadetail1">  <img class="mediapicture"   src="/assets/images/facebook.png"><p>{{getid.facebook}}</p></span>
+                </span>
+                <span class="socialdetail"><img class="mediapicture"   src="/assets/images/linkedin.png"> <p>{{getid.linkedin}}</p></span>
+                <div class="describedetail"><img class="mediapicture"   src="/assets/images/describe.png">
+                 <!-- <div> <p>I am so thankful that you’re in my life, and I want to take the time to tell you how
+                   much I truly appreciate you. You’re not only a great listener, but you also give the best advice. 
+                   Whenever I need guidance, I know I can turn to you.</p></div>  -->
+                   <div><p>{{getid.description}}</p></div>
+                  </div>
+              </span>
+            </div>
          </div>
        </div>
+      <!-- </mat-paginator> -->
       </div>
      </div>
   </body>
