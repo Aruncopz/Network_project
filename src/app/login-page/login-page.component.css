@@ -90,6 +90,30 @@
     font-size: 18px;
     padding-left: 10px;
 }
+.unamecontent{
+  display: flex;
+  flex-direction: row;
+    width:200px;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+/* .unamecontentbox{
+    margin-top: 3px;
+    margin-bottom: 3px;
+   
+    
+} */
+.unamerequired{
+    color: red;
+    text-align: center;
+    margin-left: 140px;
+    
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Dosis', sans-serif;
+}
 #pwd{
     width: 300px;
     height: 45px;
@@ -104,10 +128,26 @@
     font-size: 18px;
     padding-left: 10px;
 }
+.pwordcontent{
+    display: flex;
+  flex-direction: row;
+    width:500px;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+   margin-top: 15px;
+}
+.pwordrequired{
+    color: red;
+    margin-left: 120px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Dosis', sans-serif;
+}
 #submitbutton{
     width: 64px;
     height: 33px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 263px;
     background-color: #ffffff;
     border: 1.5px solid black;
@@ -117,3 +157,4 @@
     font-weight: 600;
     font-size: 14px;
 }
+

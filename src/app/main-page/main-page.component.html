@@ -1,4 +1,4 @@
-<!-- <html *ngIf="showMainPage">
+<html *ngIf="showMainPage">
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6e416a56bb.js" crossorigin="anonymous"></script>
@@ -19,10 +19,11 @@
         
         </div>
         <div id="profilecontentbox" *ngIf="showElements">
-          <p class="profilename"> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Arunkumar <br><br><br><br><br><br><br><br>
-              &nbsp;   arunjothi2599@gmail.com
+          <p class="profilename"> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  {{ userdata.username }} 
+            <br><br><br><br><br><br><br><br>
+              &nbsp;   {{ userdata.mail }}
           </p>
-          <button class="logoutbutton">Logout</button>
+          <button class="logoutbutton" (click)=" Logout()">Logout</button>
       </div>
       
       <div id="showbox">
@@ -88,10 +89,10 @@
       </div>
      </div>
   </body>
-</html> -->
+</html>
 <!-- <app-details-display-page *ngIf="showDetailsDisplayPage" [receiver]="currentUser"></app-details-display-page> -->
 
-<html *ngIf="showMainPage">
+<!-- <html *ngIf="showMainPage">
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6e416a56bb.js" crossorigin="anonymous"></script>
@@ -183,4 +184,4 @@
       </div>
      </div>
   </body>
-</html>
+</html> -->

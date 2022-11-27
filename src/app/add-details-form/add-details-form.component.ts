@@ -1,15 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
-// import {COMMA, ENTER} from '@angular/cdk/keycodes';
-// import {ElementRef, ViewChild} from '@angular/core';
-// import {FormControl} from '@angular/forms';
-// import {MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
-// import {MatChipInputEvent} from '@angular/material/chips';
-// import {Observable} from 'rxjs';
-// import {map, startWith} from 'rxjs/operators';
-// import { IDropdownSettings, } from 'ng-multiselect-dropdown';
-
+import { Router } from '@angular/router';
+import { compileNgModule } from '@angular/compiler';
 @Component({
   selector: 'app-add-details-form',
   templateUrl: './add-details-form.component.html', 
@@ -45,11 +37,15 @@ export class AddDetailsFormComponent implements OnInit {
    getData(data:NgForm){
     console.warn(data)
    }
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
 
+  }
+  Logout() {
+    sessionStorage.removeItem('User');
+    this.router.navigate(['./welcomepage']);
   }
  
   showElements: boolean = false;

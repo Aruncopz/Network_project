@@ -15,12 +15,10 @@ import{FormsModule} from '@angular/forms';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {ReactiveFormsModule } from '@angular/forms';
+import { TagSelectionComponent } from './tag-selection/tag-selection.component';
 
-
-import {FormControl} from '@angular/forms';
-import {MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
-
-
+import {MatIconModule} from '@angular/material/icon';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -31,7 +29,8 @@ import {MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
     MainPageComponent,
     AddDetailsFormComponent,
     DetailsDisplayPageComponent,
-   
+    TagSelectionComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -41,11 +40,8 @@ import {MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
     MatChipsModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    FormControl,
-    MatAutocompleteSelectedEvent,
-  
-   
-    
+    MatIconModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

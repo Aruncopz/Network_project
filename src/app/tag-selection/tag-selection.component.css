@@ -1,0 +1,15 @@
+  .example-chip-list {
+    width: 20vw;
+    background: white;
+   
+  }
+  ::placeholder {
+    color: gray;
+    opacity: 2;
+    font-family: dosis;
+   font-weight: 600;
+   
+  }
+  .header{
+     font-family: dosis; 
+  }

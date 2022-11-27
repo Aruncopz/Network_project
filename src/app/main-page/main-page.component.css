@@ -235,7 +235,11 @@ fieldset{
     width: 140px;
     margin-left: 15px;
     margin-top: 63px;
+    cursor: pointer;
 }
+.card:hover {
+    transform: scale(1.1);
+  }
 .imagebox{
     height: 130px;
     background: rgba(255, 255, 255, 0.6);
