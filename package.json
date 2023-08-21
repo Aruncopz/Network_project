@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "crypto-js": "^4.1.1",
+    "firebase": "^10.2.0",
     "ng-image-slider": "^6.1.0",
     "ng-multiselect-dropdown": "^1.0.0-beta.19",
     "rxjs": "~7.5.0",
