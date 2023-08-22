@@ -308,7 +308,7 @@ export class DetailsDisplayPageComponent implements OnInit {
   public users:{userid : any ;facebook : any;  name:  any  ; place :  any  ; image:  any ; category : any ; number : any  ; instagram :  any  ; linkedin :  any  ; description :  any  }[]=[
     {
       userid : "1",
-      image:"/assets/images/arun.png",
+      image:"/assets/images/arun.svg",
       name:'Arun',
         place: 'Kerala',
         category : 'Intresting People',
@@ -320,8 +320,8 @@ export class DetailsDisplayPageComponent implements OnInit {
       },
       {
         userid : "2",
-        image:"/assets/images/arun1.png",
-        name:'Tazzin',
+        image:"/assets/images/per1.svg",
+        name:'Surya',
           place: 'Chennai',
           category : 'Business People',
           facebook: "Aruncopzz",
@@ -332,7 +332,7 @@ export class DetailsDisplayPageComponent implements OnInit {
         },
         {
           userid : "3",
-          image:"/assets/images/arun.png",
+          image:"/assets/images/per2.svg",
           name:'Madhan',
             place: 'Chennai',
             category : 'Sport People',
@@ -344,7 +344,7 @@ export class DetailsDisplayPageComponent implements OnInit {
           },
           {
             userid : "4",
-            image:"/assets/images/arun1.png",
+            image:"/assets/images/per3.svg",
             name:'Abin',
               place: 'Chennai',
               category : 'Intresting People',
@@ -356,7 +356,7 @@ export class DetailsDisplayPageComponent implements OnInit {
             },
             {
               userid : "5",
-              image:"/assets/images/arun.png",
+              image:"/assets/images/per4.svg",
               name:'Siva',
                 place: 'Neyveli',
                 category : 'Intresting People',
@@ -368,7 +368,7 @@ export class DetailsDisplayPageComponent implements OnInit {
               },
               {
                 userid : "6",
-                image:"/assets/images/arun1.png",
+                image:"/assets/images/per5.svg",
                 name:'Aswin',
                   place: 'Chennai',
                   category : 'Intresting People',
@@ -380,7 +380,7 @@ export class DetailsDisplayPageComponent implements OnInit {
                 },
                 {
                   userid : "7",
-                  image:"/assets/images/arun.png",
+                  image:"/assets/images/per6.svg",
                   name:'Edov',
                     place: 'Neyveli',
                     category : 'Intresting People',
@@ -392,7 +392,7 @@ export class DetailsDisplayPageComponent implements OnInit {
                   },
                   {
                     userid : "8",
-                    image:"/assets/images/arun1.png",
+                    image:"/assets/images/per7.svg",
                     name:'Vichu',
                       place: 'Neyveli',
                       category : 'Intresting People',
@@ -404,7 +404,7 @@ export class DetailsDisplayPageComponent implements OnInit {
                     },
                     {
                       userid : "9",
-                      image:"/assets/images/arun.png",
+                      image:"/assets/images/per8.svg",
                       name:'Sai',
                         place: 'Neyveli',
                         category : 'Intresting People',
@@ -416,7 +416,7 @@ export class DetailsDisplayPageComponent implements OnInit {
                       },
                       {
                         userid : "10",
-                        image:"/assets/images/arun1.png",
+                        image:"/assets/images/per9.svg",
                         name:'Gugesh',
                           place: 'Neyveli',
                           category : 'Intresting People',
@@ -428,8 +428,8 @@ export class DetailsDisplayPageComponent implements OnInit {
                         },
                         {
                           userid : "11",
-                          image:"/assets/images/arun.png",
-                          name:'Rajan',
+                          image:"/assets/images/per10.svg",
+                          name:'Anush',
                             place: 'Neyveli',
                             category : 'Intresting People',
                             facebook: "Aruncopzz",
@@ -440,8 +440,8 @@ export class DetailsDisplayPageComponent implements OnInit {
                           },
                           {
                             userid : "12",
-                            image:"/assets/images/arun1.png",
-                            name:'Adhi',
+                            image:"/assets/images/per11.svg",
+                            name:'Dhivi',
                               place: 'Neyveli',
                               category : 'Intresting People',
                               facebook: "Aruncopzz",
@@ -452,8 +452,8 @@ export class DetailsDisplayPageComponent implements OnInit {
                             },
                             {
                               userid : "13",
-                              image:"/assets/images/arun.png",
-                              name:'Goel',
+                              image:"/assets/images/per12.svg",
+                              name:'Priya',
                                 place: 'Neyveli',
                                 category : 'Intresting People',
                                 facebook: "Aruncopzz",
@@ -464,8 +464,8 @@ export class DetailsDisplayPageComponent implements OnInit {
                               },
                               {
                                 userid : "14",
-                                image:"/assets/images/arun1.png",
-                                name:'Dinu',
+                                image:"/assets/images/per13.svg",
+                                name:'Tazeen',
                                   place: 'Neyveli',
                                   category : 'Intresting People',
                                   facebook: "Aruncopzz",
@@ -476,7 +476,7 @@ export class DetailsDisplayPageComponent implements OnInit {
                                 },
                                 {
                                   userid : "15",
-                                  image:"/assets/images/arun1.png",
+                                  image:"/assets/images/per14.svg",
                                   name:'Dhanz',
                                     place: 'Neyveli',
                                     category : 'Intresting People',
